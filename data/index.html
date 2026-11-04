@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Data — Your Name</title>
+    <meta
+      name="description"
+      content="A directory of studies and the researchers who lead them."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://YOUR-USERNAME.github.io/data/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Data — Your Name" />
+    <meta property="og:description" content="A directory of studies and the researchers who lead them." />
+    <meta property="og:url" content="https://YOUR-USERNAME.github.io/data/" />
+    <meta property="og:image" content="https://YOUR-USERNAME.github.io/assets/images/og-image.svg" />
+    <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+    <script src="../site-config.js"></script>
+    <script src="../assets/js/apply-site-url.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="wrap bar">
+        <a class="logo" href="../index.html">
+          <img src="../assets/images/maclab-mark.png" alt="Mind & Culture Lab" width="280" height="254" />
+        </a>
+        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
+        <nav id="site-nav" class="site-nav" data-nav aria-label="Primary">
+          <a href="../index.html#about">About</a>
+          <a href="../index.html#projects">Work</a>
+          <a href="../index.html#experience">Path</a>
+          <a href="../index.html#contact">Contact</a>
+          <a href="./" aria-current="page">Data</a>
+        </nav>
+      </div>
+      <div class="stripe" aria-hidden="true"></div>
+    </header>
+
+    <main id="main" class="wrap">
+      <section class="hero" id="top">
+        <h1>Data</h1>
+        <p class="accent-rule" aria-hidden="true"></p>
+        <p class="lede">A directory of studies and the researchers who lead them.</p>
+      </section>
+
+      <section aria-label="Study directory">
+        <div class="view-toggle" role="group" aria-label="Directory view">
+          <button type="button" data-view="studies" aria-pressed="true">Studies</button>
+          <button type="button" data-view="researchers" aria-pressed="false">Researchers</button>
+        </div>
+
+        <form class="filters" data-filters>
+          <label>
+            Search
+            <input type="search" name="q" data-search placeholder="Name, topic, or researcher" />
+          </label>
+          <label>
+            Topic
+            <select name="topic" data-topic>
+              <option value="">All topics</option>
+            </select>
+          </label>
+          <label>
+            Age
+            <select name="age" data-age>
+              <option value="">All ages</option>
+            </select>
+          </label>
+          <label>
+            Researcher
+            <select name="lead" data-lead>
+              <option value="">All researchers</option>
+            </select>
+          </label>
+        </form>
+
+        <p class="result-count" data-count aria-live="polite"></p>
+        <div data-results></div>
+      </section>
+    </main>
+
+    <footer class="wrap site-footer">
+      <p>© <span data-year>2026</span> Your Name</p>
+      <p><a href="../gallery/">All templates</a></p>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+    <script src="directory.js"></script>
+  </body>
+</html>

@@ -18,6 +18,15 @@ cp "$SRC/assets/css/styles.css" "$ROOT/assets/css/styles.css"
 cp "$SRC/assets/js/main.js" "$ROOT/assets/js/main.js"
 cp "$SRC/assets/images/"* "$ROOT/assets/images/"
 
+# Quartz ships a data directory. Other looks do not, so drop a previous copy.
+if [ -d "$SRC/data" ]; then
+  rm -rf "$ROOT/data"
+  mkdir -p "$ROOT/data"
+  cp -R "$SRC/data/." "$ROOT/data/"
+else
+  rm -rf "$ROOT/data"
+fi
+
 python3 - "$ROOT/site-config.js" "$NAME" "$ROOT" <<'PY'
 import pathlib
 import sys
@@ -46,6 +55,21 @@ for filename in ("index.html", "404.html"):
     for old, new in replacements:
         html = html.replace(old, new)
     path.write_text(html)
+
+# The data page sits one level down, so ../../ becomes ../ rather than a root path.
+template_data = root / "templates" / name / "data"
+data_root = root / "data"
+if template_data.is_dir() and data_root.is_dir():
+    data_replacements = (
+        ("../../gallery/", "../gallery/"),
+        ("../../site-config.js", "../site-config.js"),
+        ("../../assets/js/apply-site-url.js", "../assets/js/apply-site-url.js"),
+    )
+    for path in data_root.rglob("*.html"):
+        html = path.read_text()
+        for old, new in data_replacements:
+            html = html.replace(old, new)
+        path.write_text(html)
 PY
 
 echo "Homepage now uses the $NAME template."

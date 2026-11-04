@@ -1,0 +1,97 @@
+{
+  "studies": [
+    {
+      "id": "has",
+      "name": "Hide-and-Seek (HAS)",
+      "leads": ["Julia Bainbridge", "Gita Paladugu"],
+      "topic": "Moral Development & Cooperation",
+      "ageLabel": "3–8 and 18+",
+      "ageMin": 3,
+      "ageMax": 8,
+      "ranges": [
+        { "min": 3, "max": 8 },
+        { "min": 18, "max": null }
+      ],
+      "stats": null,
+      "figures": [],
+      "downloads": [],
+      "citation": null
+    },
+    {
+      "id": "search",
+      "name": "SEARCH",
+      "leads": ["Alissa Rivero"],
+      "topic": "Exploration & Innovation",
+      "ageLabel": "4–9",
+      "ageMin": 4,
+      "ageMax": 9,
+      "ranges": [{ "min": 4, "max": 9 }],
+      "stats": null,
+      "figures": [],
+      "downloads": [],
+      "citation": null
+    },
+    {
+      "id": "true-self",
+      "name": "True Self (TS)",
+      "leads": ["Julia Smith"],
+      "topic": "Moral Development & Cooperation",
+      "ageLabel": "5–12",
+      "ageMin": 5,
+      "ageMax": 12,
+      "ranges": [{ "min": 5, "max": 12 }],
+      "stats": null,
+      "figures": [],
+      "downloads": [],
+      "citation": null
+    },
+    {
+      "id": "create",
+      "name": "CREATE",
+      "leads": ["Alissa Rivero"],
+      "topic": "Exploration & Innovation",
+      "ageLabel": "4–6 and 18+",
+      "ageMin": 4,
+      "ageMax": 6,
+      "ranges": [
+        { "min": 4, "max": 6 },
+        { "min": 18, "max": null }
+      ],
+      "stats": null,
+      "figures": [],
+      "downloads": [],
+      "citation": null
+    },
+    {
+      "id": "sas",
+      "name": "Social Accounting (SAS)",
+      "leads": ["Serena Spada"],
+      "topic": "Moral Development & Cooperation",
+      "ageLabel": "4–7 and 18+",
+      "ageMin": 4,
+      "ageMax": 7,
+      "ranges": [
+        { "min": 4, "max": 7 },
+        { "min": 18, "max": null }
+      ],
+      "stats": null,
+      "figures": [],
+      "downloads": [],
+      "citation": null
+    },
+    {
+      "id": "play-with-toys",
+      "name": "Play With Toys",
+      "leads": ["Alissa Rivero"],
+      "topic": "Exploration & Innovation",
+      "ageLabel": "5–6",
+      "ageMin": 5,
+      "ageMax": 6,
+      "ranges": [{ "min": 5, "max": 6 }],
+      "stats": null,
+      "figures": [],
+      "downloads": [],
+      "citation": null
+    }
+  ]
+}

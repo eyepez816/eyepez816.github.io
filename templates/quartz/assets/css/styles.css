@@ -1,10 +1,17 @@
 :root {
-  --bg: #fafafa;
+  --bg: #ffffff;
   --ink: #111111;
-  --muted: #6b6b6b;
-  --gold: #b0893a;
-  --serif: "Palatino Linotype", Palatino, Georgia, serif;
-  --sans: "Avenir Next", "Segoe UI", Helvetica, sans-serif;
+  --muted: #5c5c5c;
+  /* Current-page green from the lab navigation. */
+  --sage: #5aa276;
+  /* Same hue, darkened so small labels clear 4.5:1 on white. */
+  --sage-ink: #3f7a58;
+  --terracotta: #ee871f;
+  --terracotta-deep: #e85400;
+  --lilac: #cfbcf9;
+  --stripe-sage: #a8c4b1;
+  --display: "Fira Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --sans: Helvetica, Arial, sans-serif;
   --max: 720px;
 }
 
@@ -50,24 +57,46 @@ a {
   margin-inline: auto;
 }
 
+.site-header {
+  background: var(--bg);
+}
+
 .bar {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   min-height: 5rem;
 }
 
 .logo {
+  display: inline-flex;
+  flex: none;
   text-decoration: none;
-  letter-spacing: 0.28em;
-  font-size: 0.8rem;
+}
+
+.logo img {
+  display: block;
+  width: 2.85rem;
+  height: auto;
+}
+
+.stripe {
+  height: 0.85rem;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--terracotta) 0 1.35rem,
+    var(--stripe-sage) 1.35rem 2.7rem,
+    var(--terracotta-deep) 2.7rem 4.05rem,
+    var(--lilac) 4.05rem 5.4rem
+  );
 }
 
 .nav-toggle {
   display: none;
   border: 0;
-  border-bottom: 1px solid var(--gold);
+  border-bottom: 1px solid var(--sage);
   background: transparent;
   color: var(--ink);
   padding: 0.3rem 0;
@@ -76,32 +105,41 @@ a {
 
 .site-nav {
   display: flex;
-  gap: 1.4rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1.1rem 1.25rem;
 }
 
 .site-nav a {
   text-decoration: none;
-  font-size: 0.85rem;
+  font-family: var(--display);
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  color: var(--sage);
 }
 
 .hero {
-  padding: 5rem 0 4rem;
+  padding: 4.2rem 0 3.2rem;
 }
 
 h1 {
   margin: 0;
-  font-family: var(--serif);
-  font-size: clamp(4rem, 12vw, 7.2rem);
-  font-weight: 400;
-  letter-spacing: -0.05em;
-  line-height: 0.9;
+  font-family: var(--display);
+  font-size: clamp(3.4rem, 9vw, 5.6rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.95;
 }
 
-.gold-rule {
+.accent-rule {
   width: 4.5rem;
-  height: 1px;
-  margin: 1.6rem 0 1.4rem;
-  background: var(--gold);
+  height: 3px;
+  margin: 1.5rem 0 1.3rem;
+  background: var(--sage);
 }
 
 .lede,
@@ -117,10 +155,11 @@ section {
 
 h2 {
   margin: 0 0 1.2rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.22em;
+  font-family: var(--display);
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--gold);
+  color: var(--sage-ink);
   font-weight: 600;
 }
 
@@ -141,20 +180,23 @@ h2 {
   grid-template-columns: 3rem 1fr;
   gap: 1rem;
   padding: 1.4rem 0;
-  border-top: 1px solid rgba(176, 137, 58, 0.35);
+  border-top: 1px solid rgba(90, 162, 118, 0.35);
 }
 
 .work span {
-  font-family: var(--serif);
-  color: var(--gold);
+  font-family: var(--display);
+  color: var(--sage-ink);
   font-size: 1.1rem;
+  font-weight: 600;
 }
 
-.work h3 {
+.work h3,
+.study h3,
+.person h3 {
   margin: 0 0 0.35rem;
-  font-family: var(--serif);
-  font-size: 1.4rem;
-  font-weight: 400;
+  font-family: var(--display);
+  font-size: 1.45rem;
+  font-weight: 600;
 }
 
 .path li {
@@ -164,9 +206,11 @@ h2 {
 .path em {
   display: inline-block;
   min-width: 8rem;
+  font-family: var(--display);
   font-style: normal;
-  color: var(--gold);
+  color: var(--sage-ink);
   font-size: 0.88rem;
+  font-weight: 600;
 }
 
 .links {
@@ -190,8 +234,134 @@ h2 {
   align-content: center;
 }
 
+.view-toggle {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0 0 1.4rem;
+}
+
+.view-toggle button,
+.filters select,
+.filters input,
+.person button {
+  font: inherit;
+  color: var(--ink);
+}
+
+.view-toggle button {
+  border: 0;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  padding: 0.35rem 0.1rem;
+  font-family: var(--display);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-toggle button[aria-pressed="true"] {
+  color: var(--sage);
+  border-bottom-color: var(--sage);
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem 1rem;
+  margin: 0 0 1.2rem;
+}
+
+.filters label {
+  display: grid;
+  gap: 0.3rem;
+  font-family: var(--display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sage-ink);
+}
+
+.filters label:first-child {
+  grid-column: 1 / -1;
+}
+
+.filters input,
+.filters select {
+  border: 0;
+  border-bottom: 1px solid rgba(90, 162, 118, 0.55);
+  border-radius: 0;
+  background: transparent;
+  padding: 0.45rem 0;
+  letter-spacing: 0;
+  text-transform: none;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.filters input:focus,
+.filters select:focus {
+  outline: none;
+  border-bottom-color: var(--sage);
+}
+
+.result-count {
+  margin: 0 0 0.4rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.studies,
+.researchers {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.study,
+.person {
+  padding: 1.25rem 0;
+  border-top: 1px solid rgba(90, 162, 118, 0.35);
+}
+
+.study p,
+.person li {
+  margin: 0.2rem 0 0;
+}
+
+.meta {
+  color: var(--sage-ink);
+  font-family: var(--display);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.person button {
+  border: 0;
+  background: transparent;
+  padding: 0;
+  font-family: var(--display);
+  font-size: 1.45rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+
+.person button:hover {
+  color: var(--sage);
+}
+
+.person ul {
+  margin: 0.45rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.empty {
+  color: var(--muted);
+}
+
 :focus-visible {
-  outline: 1px solid var(--gold);
+  outline: 2px solid var(--sage);
   outline-offset: 4px;
 }
 
@@ -203,13 +373,15 @@ h2 {
   .site-nav {
     display: none;
     position: absolute;
-    top: 5rem;
-    right: 1.2rem;
-    left: 1.2rem;
-    padding: 1rem;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    padding: 0.4rem 0 1rem;
     flex-direction: column;
+    align-items: flex-start;
     background: var(--bg);
-    border-top: 1px solid var(--gold);
+    border-top: 1px solid var(--sage);
   }
 
   .site-nav.is-open {
@@ -217,7 +389,12 @@ h2 {
   }
 
   .work li,
-  .site-footer {
+  .site-footer,
+  .filters {
     grid-template-columns: 1fr;
+  }
+
+  .filters label:first-child {
+    grid-column: auto;
   }
 }
