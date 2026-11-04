@@ -2,7 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Keep this in sync with siteUrl in site-config.js -->
   <url>
-    <loc>https://YOUR-USERNAME.github.io/</loc>
+    <loc>https://mindandculturelab.github.io/</loc>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://mindandculturelab.github.io/data/</loc>
+    <priority>0.8</priority>
   </url>
 </urlset>
