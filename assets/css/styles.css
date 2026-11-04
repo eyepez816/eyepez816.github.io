@@ -146,7 +146,24 @@ h1 {
 section p,
 .work p {
   color: var(--muted);
-  max-width: 34rem;
+  max-width: 36rem;
+}
+
+.lede a,
+.work h3 a {
+  color: inherit;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+
+.lede a {
+  color: var(--sage-ink);
+  font-weight: 600;
+}
+
+.work h3 a:hover,
+.lede a:hover {
+  color: var(--sage);
 }
 
 section {
