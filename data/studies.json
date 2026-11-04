@@ -98,6 +98,26 @@
       "figures": [],
       "downloads": [],
       "citation": null
+    },
+    {
+      "id": "tsa",
+      "name": "How Two- and Three-Year-Olds Coordinate Decisions in Dyads and Triads",
+      "leads": ["Alissa Rivero"],
+      "topic": "Cooperation",
+      "keywords": ["cooperation"],
+      "ageLabel": "2–3",
+      "ageMin": 2,
+      "ageMax": 3,
+      "ranges": [{ "min": 2, "max": 3 }],
+      "stats": null,
+      "figures": [],
+      "downloads": [
+        { "label": "Analysis script", "href": "files/tsa_script.Rmd" },
+        { "label": "Group data", "href": "files/tsa_data.xlsx" },
+        { "label": "Reliability coding", "href": "files/tsa_reliability_expanded.xlsx" },
+        { "label": "Communication coding", "href": "files/tsa_comm.xlsx" }
+      ],
+      "citation": null
     }
   ]
 }

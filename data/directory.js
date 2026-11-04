@@ -12,6 +12,7 @@
   var ageSelect = document.querySelector("[data-age]");
   var leadSelect = document.querySelector("[data-lead]");
   var viewButtons = document.querySelectorAll("[data-view]");
+  var keywordLinks = document.querySelectorAll("[data-keyword]");
 
   if (!results || !searchInput || !topicSelect || !ageSelect || !leadSelect) {
     return;
@@ -52,16 +53,52 @@
     });
   }
 
+  function keywordId() {
+    return decodeURIComponent(location.hash.replace(/^#/, ""));
+  }
+
+  function activeKeyword() {
+    var id = keywordId();
+    var known = false;
+    keywordLinks.forEach(function (link) {
+      if (link.getAttribute("data-keyword") === id) {
+        known = true;
+      }
+    });
+    return known ? id : "";
+  }
+
+  function markKeywords(id) {
+    keywordLinks.forEach(function (link) {
+      if (id && link.getAttribute("data-keyword") === id) {
+        link.setAttribute("aria-current", "true");
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+  }
+
   function filters() {
     return {
       q: searchInput.value.trim().toLowerCase(),
       topic: topicSelect.value,
       age: ageSelect.value,
-      lead: leadSelect.value
+      lead: leadSelect.value,
+      keyword: activeKeyword()
     };
   }
 
+  function emptyMessage(state) {
+    if (state.keyword && !state.q && !state.topic && !state.age && !state.lead) {
+      return "Nothing in the directory is tagged with this word yet.";
+    }
+    return "Nothing matches.";
+  }
+
   function matches(study, state) {
+    if (state.keyword && (study.keywords || []).indexOf(state.keyword) === -1) {
+      return false;
+    }
     if (state.topic && study.topic !== state.topic) {
       return false;
     }
@@ -118,7 +155,7 @@
 
   function renderStudies(list) {
     if (!list.length) {
-      count.textContent = "Nothing matches.";
+      count.textContent = emptyMessage(filters());
       return;
     }
     count.textContent = list.length === 1 ? "1 study" : list.length + " studies";
@@ -128,7 +165,12 @@
       var item = document.createElement("li");
       item.className = "study";
       item.id = study.id;
-      addText(item, "h3", "", study.name);
+      var heading = document.createElement("h3");
+      var link = document.createElement("a");
+      link.href = "../studies/" + study.id + "/";
+      link.textContent = study.name;
+      heading.appendChild(link);
+      item.appendChild(heading);
       addText(item, "p", "meta", study.topic + " · " + study.ageLabel);
       addText(item, "p", "", study.leads.join(", "));
       ol.appendChild(item);
@@ -149,7 +191,7 @@
       });
     }
     if (!names.length) {
-      count.textContent = "Nothing matches.";
+      count.textContent = emptyMessage(filters());
       return;
     }
     count.textContent = names.length === 1 ? "1 researcher" : names.length + " researchers";
@@ -171,7 +213,10 @@
           return;
         }
         var li = document.createElement("li");
-        li.textContent = study.name + " · " + study.ageLabel;
+        var studyLink = document.createElement("a");
+        studyLink.href = "../studies/" + study.id + "/";
+        studyLink.textContent = study.name + " · " + study.ageLabel;
+        li.appendChild(studyLink);
         ul.appendChild(li);
       });
       block.appendChild(ul);
@@ -180,9 +225,15 @@
     results.appendChild(wrap);
   }
 
+  function scrollToResults() {
+    results.scrollIntoView({ block: "nearest" });
+  }
+
   function render() {
+    var state = filters();
+    markKeywords(state.keyword);
     var list = studies.filter(function (study) {
-      return matches(study, filters());
+      return matches(study, state);
     });
     results.replaceChildren();
     if (view === "researchers") {
@@ -224,6 +275,28 @@
     field.addEventListener("change", render);
   });
 
+  var keywordList = document.querySelector(".keywords");
+  if (keywordList) {
+    keywordList.addEventListener("click", function (event) {
+      var link = event.target.closest("[data-keyword]");
+      if (!link) {
+        return;
+      }
+      if (keywordId() === link.getAttribute("data-keyword")) {
+        event.preventDefault();
+        render();
+        scrollToResults();
+      }
+    });
+  }
+
+  window.addEventListener("hashchange", function () {
+    render();
+    if (activeKeyword()) {
+      scrollToResults();
+    }
+  });
+
   results.addEventListener("click", function (event) {
     var button = event.target.closest("[data-person]");
     if (!button) {
@@ -252,6 +325,9 @@
         "All researchers"
       );
       render();
+      if (activeKeyword()) {
+        scrollToResults();
+      }
     })
     .catch(function () {
       count.textContent = "Nothing matches.";

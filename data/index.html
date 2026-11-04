@@ -6,19 +6,19 @@
     <title>Data — Mind &amp; Culture Lab</title>
     <meta
       name="description"
-      content="A directory of studies and the researchers who lead them."
+      content="An introduction to the words behind the lab's data, and a directory of the studies and researchers connected to them."
     />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://mindandculturelab.github.io/data/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Data — Mind &amp; Culture Lab" />
-    <meta property="og:description" content="A directory of studies and the researchers who lead them." />
+    <meta property="og:description" content="Choose a word to see the studies connected to it, or browse the full directory." />
     <meta property="og:url" content="https://mindandculturelab.github.io/data/" />
     <meta property="og:image" content="https://mindandculturelab.github.io/assets/images/og-image.svg" />
     <link rel="icon" href="../assets/images/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../assets/css/styles.css" />
     <script src="../site-config.js"></script>
     <script src="../assets/js/apply-site-url.js"></script>
@@ -28,27 +28,63 @@
     <header class="site-header">
       <div class="wrap bar">
         <a class="logo" href="../index.html">
-          <img src="../assets/images/maclab-mark.png" alt="Mind & Culture Lab" width="280" height="254" />
+          <img src="../assets/images/maclab-mark.png" alt="" width="280" height="254" />
+          <span>Mind &amp; Culture Lab</span>
         </a>
         <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
         <nav id="site-nav" class="site-nav" data-nav aria-label="Primary">
           <a href="../index.html#about">About</a>
-          <a href="../index.html#studies">Studies</a>
-          <a href="../index.html#contact">Contact</a>
+          <a href="../studies/">Studies</a>
           <a href="./" aria-current="page">Data</a>
+          <a href="../index.html#contact">Contact</a>
         </nav>
       </div>
       <div class="stripe" aria-hidden="true"></div>
     </header>
 
-    <main id="main" class="wrap">
-      <section class="hero" id="top">
-        <h1>Data</h1>
-        <p class="accent-rule" aria-hidden="true"></p>
-        <p class="lede">A directory of studies and the researchers who lead them.</p>
+    <main id="main">
+      <section class="hero wrap" id="top">
+        <div>
+          <p class="eyebrow">Open data</p>
+          <h1>Data</h1>
+        </div>
+        <p class="lede">These words name the questions behind the studies. Choose one to see the data connected to it.</p>
       </section>
 
-      <section aria-label="Study directory">
+      <section class="wrap section" aria-label="Study directory">
+        <ul class="keywords">
+          <li>
+            <a class="keyword" href="#exploration" data-keyword="exploration">
+              <strong>Exploration</strong>
+              <span>How people search for something new, try an option they have not tried, or make something of their own.</span>
+            </a>
+          </li>
+          <li>
+            <a class="keyword" href="#morality" data-keyword="morality">
+              <strong>Morality</strong>
+              <span>How children and adults judge what is right or wrong, and whether a person has changed.</span>
+            </a>
+          </li>
+          <li>
+            <a class="keyword" href="#decision-making" data-keyword="decision-making">
+              <strong>Decision making</strong>
+              <span>How people choose what to do, including when someone else's choice changes the outcome.</span>
+            </a>
+          </li>
+          <li>
+            <a class="keyword" href="#generosity" data-keyword="generosity">
+              <strong>Generosity</strong>
+              <span>How people decide to give, share, or keep something for themselves.</span>
+            </a>
+          </li>
+          <li>
+            <a class="keyword" href="#cooperation" data-keyword="cooperation">
+              <strong>Cooperation</strong>
+              <span>How people coordinate with someone else so a shared choice can succeed.</span>
+            </a>
+          </li>
+        </ul>
+
         <div class="view-toggle" role="group" aria-label="Directory view">
           <button type="button" data-view="studies" aria-pressed="true">Studies</button>
           <button type="button" data-view="researchers" aria-pressed="false">Researchers</button>
@@ -84,8 +120,11 @@
       </section>
     </main>
 
-    <footer class="wrap site-footer">
-      <p>© <span data-year>2026</span> Mind &amp; Culture Lab</p>
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <p>© <span data-year>2026</span> Mind &amp; Culture Lab</p>
+        <p>Duke University</p>
+      </div>
     </footer>
     <script src="../assets/js/main.js"></script>
     <script src="directory.js"></script>
