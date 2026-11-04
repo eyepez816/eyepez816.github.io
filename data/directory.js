@@ -76,6 +76,7 @@
     }
     var haystack = [study.name, study.topic, study.ageLabel]
       .concat(study.leads)
+      .concat(study.keywords || [])
       .join(" ")
       .toLowerCase();
     return haystack.indexOf(state.q) !== -1;

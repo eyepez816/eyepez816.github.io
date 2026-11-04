@@ -149,21 +149,82 @@ section p,
   max-width: 36rem;
 }
 
-.lede a,
 .work h3 a {
   color: inherit;
   text-decoration-thickness: 1px;
   text-underline-offset: 0.18em;
 }
 
-.lede a {
-  color: var(--sage-ink);
-  font-weight: 600;
+.work h3 a:hover {
+  color: var(--sage);
 }
 
-.work h3 a:hover,
-.lede a:hover {
-  color: var(--sage);
+.button {
+  display: inline-block;
+  padding: 1.15rem 1.7rem;
+  background: var(--sage-ink);
+  color: #fff;
+  font-family: var(--display);
+  font-size: clamp(1.45rem, 4vw, 1.9rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  text-decoration: none;
+}
+
+.button:hover {
+  background: #2f6b4a;
+  color: #fff;
+}
+
+.keywords {
+  display: grid;
+  gap: 0.85rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.keyword {
+  display: block;
+  padding: 1.2rem 1.15rem 1.1rem;
+  border: 1px solid rgba(63, 122, 88, 0.35);
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.keyword strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-family: var(--display);
+  font-size: clamp(1.7rem, 4vw, 2.15rem);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  line-height: 1.05;
+}
+
+.keyword span {
+  display: block;
+  max-width: 36rem;
+  color: var(--muted);
+}
+
+.keyword:hover,
+.keyword[aria-current="true"] {
+  border-color: var(--sage-ink);
+  background: #f3f7f4;
+}
+
+.keyword[aria-current="true"] strong {
+  color: var(--sage-ink);
+}
+
+.keyword-results {
+  margin-top: 1.6rem;
+}
+
+.keyword-results h2 {
+  margin-bottom: 0.4rem;
 }
 
 section {
