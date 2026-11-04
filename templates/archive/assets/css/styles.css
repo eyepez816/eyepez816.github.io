@@ -1,0 +1,231 @@
+:root {
+  --bg: #f7f0e8;
+  --paper: #fff8f0;
+  --ink: #3a2a2a;
+  --muted: #7a6464;
+  --rose: #8c4a4a;
+  --line: #e0d0c4;
+  --serif: "Iowan Old Style", Palatino, Georgia, serif;
+  --sans: "Avenir Next", "Segoe UI", Helvetica, sans-serif;
+  --max: 920px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  line-height: 1.65;
+}
+
+a {
+  color: var(--rose);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  z-index: 20;
+  padding: 0.5rem 0.8rem;
+  background: var(--rose);
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--sans);
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.wrap {
+  width: min(var(--max), calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.site-header {
+  border-bottom: 1px solid var(--rose);
+  background: #fff8f0;
+}
+
+.bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 4.2rem;
+}
+
+.institution,
+.acc {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--rose);
+}
+
+.logo {
+  color: var(--ink);
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+.nav-toggle {
+  display: none;
+  border: 1px solid var(--rose);
+  background: var(--paper);
+  color: var(--ink);
+  padding: 0.35rem 0.7rem;
+  font: inherit;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.1rem;
+  font-family: var(--sans);
+  font-size: 0.88rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+}
+
+.hero {
+  padding: 3.5rem 0 2rem;
+}
+
+h1 {
+  margin: 0.4rem 0 0.8rem;
+  font-size: clamp(2.6rem, 6vw, 4.4rem);
+  font-weight: 400;
+}
+
+.lede,
+.card p,
+ol {
+  color: var(--muted);
+}
+
+section {
+  padding: 0 0 2rem;
+}
+
+h2 {
+  margin: 0 0 0.7rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  padding: 1.3rem 1.4rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 8px 0 rgba(140, 74, 74, 0.08);
+}
+
+.card .acc {
+  margin-bottom: 0.6rem;
+}
+
+dl {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 1.2rem 0 0;
+}
+
+dt {
+  font-family: var(--sans);
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--rose);
+}
+
+dd {
+  margin: 0.2rem 0 0;
+}
+
+.holdings {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+ol {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+ol span {
+  display: block;
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  color: var(--rose);
+}
+
+.site-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 0 2.4rem;
+  font-family: var(--sans);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.missing {
+  min-height: 70vh;
+  display: grid;
+  align-content: center;
+}
+
+:focus-visible {
+  outline: 2px solid var(--rose);
+  outline-offset: 3px;
+}
+
+@media (max-width: 860px) {
+  .bar {
+    flex-wrap: wrap;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    margin-left: auto;
+  }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding-bottom: 0.8rem;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+
+  .institution {
+    width: 100%;
+  }
+
+  dl,
+  .holdings,
+  .site-footer {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,138 @@
+:root {
+  --bg: #f7f4ee;
+  --ink: #2a241c;
+  --muted: #6d6458;
+  --line: #d8d0c4;
+  --serif: Georgia, "Iowan Old Style", serif;
+  --sans: "Avenir Next", "Segoe UI", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--serif);
+  line-height: 1.7;
+}
+
+a {
+  color: var(--ink);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 0.45rem 0.7rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+.wrap {
+  width: min(42rem, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem 0 1rem;
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  font-family: var(--sans);
+  font-size: 0.92rem;
+}
+
+.date {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.88rem;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-top: 2.4rem;
+}
+
+section {
+  padding-bottom: 0.4rem;
+}
+
+ol {
+  padding-left: 1.2rem;
+}
+
+li {
+  margin: 0.8rem 0;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  margin-top: 2.5rem;
+  padding: 1rem 0 2.5rem;
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 0.88rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+@media (max-width: 720px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    border: 1px solid var(--line);
+    background: transparent;
+    font: inherit;
+    padding: 0.3rem 0.65rem;
+  }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    padding-top: 0.6rem;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#efe7d8"/>
+  <rect width="1200" height="18" fill="#171513"/>
+  <text x="80" y="300" font-family="Arial Black, sans-serif" font-size="72" fill="#171513">Your Name</text>
+  <text x="80" y="380" font-family="Arial, sans-serif" font-size="32" fill="#c7371b">Studio template</text>
+</svg>

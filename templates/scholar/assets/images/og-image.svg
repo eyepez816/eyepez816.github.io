@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#fbfaf6"/>
+  <rect x="80" y="80" width="120" height="4" fill="#1f3a68"/>
+  <text x="80" y="280" font-family="Georgia, serif" font-size="72" fill="#1e2330">Your Name</text>
+  <text x="80" y="350" font-family="Arial, sans-serif" font-size="28" fill="#5c6475">Curriculum Vitae · Scholar template</text>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Your Name Quartz portfolio">
+  <rect width="1200" height="630" fill="#fafafa"/>
+  <text x="100" y="300" font-family="Georgia, serif" font-size="96" fill="#111">Your Name</text>
+  <rect x="100" y="340" width="90" height="2" fill="#b0893a"/>
+  <text x="100" y="400" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#6b6b6b">Selected work</text>
+</svg>

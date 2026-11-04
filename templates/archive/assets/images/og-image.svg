@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Your Name Archive portfolio">
+  <rect width="1200" height="630" fill="#f7f0e8"/>
+  <rect x="90" y="80" width="1020" height="470" fill="#fff8f0" stroke="#8c4a4a" stroke-width="2"/>
+  <text x="120" y="140" font-family="Helvetica, Arial, sans-serif" font-size="18" letter-spacing="6" fill="#8c4a4a">ACC. 000 · PERSONAL COLLECTION</text>
+  <text x="120" y="310" font-family="Georgia, serif" font-size="78" fill="#3a2a2a">Your Name</text>
+  <text x="120" y="380" font-family="Georgia, serif" font-size="28" fill="#7a6464">A catalog of class work and questions</text>
+</svg>

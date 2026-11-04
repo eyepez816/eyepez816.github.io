@@ -1,0 +1,168 @@
+:root {
+  --bg: #efe7d8;
+  --ink: #171513;
+  --muted: #5b5348;
+  --red: #c7371b;
+  --sans: "Avenir Next", "Helvetica Neue", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--sans);
+}
+
+a {
+  color: inherit;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -3rem;
+  background: var(--ink);
+  color: var(--bg);
+  padding: 0.5rem 0.8rem;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+header,
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.4rem;
+  border-bottom: 2px solid var(--ink);
+}
+
+footer {
+  border-bottom: 0;
+  border-top: 2px solid var(--ink);
+}
+
+.logo {
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+.site-nav {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.site-nav a {
+  text-decoration: none;
+}
+
+.hero {
+  padding: 4.5rem 1.4rem 3rem;
+}
+
+.eyebrow {
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  color: var(--red);
+}
+
+h1 {
+  max-width: 18ch;
+  font-size: clamp(2.6rem, 8vw, 5.4rem);
+  line-height: 0.95;
+  margin: 0.4rem 0 0;
+}
+
+.band {
+  padding: 2.4rem 1.4rem;
+  border-top: 2px solid var(--ink);
+}
+
+.band p,
+.project p {
+  max-width: 40rem;
+  color: var(--muted);
+}
+
+.project {
+  min-height: 16rem;
+  padding: 2rem 1.4rem;
+  border-top: 2px solid var(--ink);
+  display: grid;
+  align-content: end;
+}
+
+.project h3 {
+  margin: 0.2rem 0 0.4rem;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+}
+
+.project.c1 {
+  background: #f3c7b5;
+}
+
+.project.c2 {
+  background: #c9d7c4;
+}
+
+.project.c3 {
+  background: #d8c9ef;
+}
+
+.dark {
+  background: var(--ink);
+  color: var(--bg);
+}
+
+.dark p,
+.dark a {
+  color: #efe7d8;
+}
+
+:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: 3px;
+}
+
+@media (max-width: 860px) {
+  header {
+    flex-wrap: wrap;
+  }
+
+  .nav-toggle {
+    display: inline-flex;
+    margin-left: auto;
+    border: 2px solid var(--ink);
+    background: transparent;
+    font: inherit;
+    padding: 0.3rem 0.7rem;
+  }
+
+  .site-nav {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .site-nav.is-open {
+    display: flex;
+  }
+}

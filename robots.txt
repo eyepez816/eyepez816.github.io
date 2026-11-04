@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Keep this Sitemap in sync with siteUrl in site-config.js
+Sitemap: https://YOUR-USERNAME.github.io/sitemap.xml

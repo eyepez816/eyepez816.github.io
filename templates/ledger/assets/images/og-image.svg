@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Your Name Ledger portfolio">
+  <rect width="1200" height="630" fill="#f6f3ea"/>
+  <rect x="80" y="80" width="1040" height="470" fill="#fffdf6" stroke="#3f4f2f" stroke-width="3"/>
+  <text x="110" y="140" font-family="Menlo, monospace" font-size="20" fill="#3f4f2f">BOOK 01</text>
+  <text x="110" y="300" font-family="Georgia, serif" font-size="78" fill="#24301d">Your Name</text>
+  <text x="110" y="370" font-family="Helvetica, Arial, sans-serif" font-size="26" fill="#5d6754">A running account of projects and experience</text>
+</svg>

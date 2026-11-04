@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Your Name Nova portfolio">
+  <rect width="1200" height="630" fill="#140c22"/>
+  <circle cx="980" cy="120" r="90" fill="#e879f9" opacity="0.35"/>
+  <circle cx="180" cy="520" r="70" fill="#67e8f9" opacity="0.25"/>
+  <text x="90" y="290" font-family="Helvetica, Arial, sans-serif" font-size="86" fill="#f4eefe">Your Name</text>
+  <text x="90" y="360" font-family="Helvetica, Arial, sans-serif" font-size="28" fill="#e879f9">Creative tech · games · experiments</text>
+</svg>

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Site icon">
+  <rect width="64" height="64" fill="#111"/>
+  <line x1="16" y1="48" x2="48" y2="48" stroke="#b0893a" stroke-width="2"/>
+  <text x="32" y="38" text-anchor="middle" font-family="Georgia, serif" font-size="20" fill="#fafafa">YN</text>
+</svg>
