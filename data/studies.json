@@ -117,6 +117,7 @@
         { "label": "Reliability coding", "href": "files/tsa_reliability_expanded.xlsx" },
         { "label": "Communication coding", "href": "files/tsa_comm.xlsx" }
       ],
+      "explorer": "data/",
       "citation": null
     }
   ]

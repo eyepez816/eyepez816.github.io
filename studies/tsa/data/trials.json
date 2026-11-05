@@ -1,0 +1,1442 @@
+[
+  {
+    "group": 0,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 1,
+    "success": 0
+  },
+  {
+    "group": 0,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 2,
+    "success": 0
+  },
+  {
+    "group": 0,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 3,
+    "success": 0
+  },
+  {
+    "group": 0,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 4,
+    "success": 0
+  },
+  {
+    "group": 1,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 1,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 1,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 1,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 2,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 2,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 2,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 2,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 3,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 3,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 3,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 3,
+    "success": 0
+  },
+  {
+    "group": 3,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 4,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 4,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 4,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 4,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 5,
+    "age": 2,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 1,
+    "success": 0
+  },
+  {
+    "group": 5,
+    "age": 2,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 2,
+    "success": 0
+  },
+  {
+    "group": 5,
+    "age": 2,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 3,
+    "success": 0
+  },
+  {
+    "group": 5,
+    "age": 2,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 4,
+    "success": 0
+  },
+  {
+    "group": 6,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 6,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 6,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 6,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 7,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 7,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 7,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 7,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 8,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 8,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 8,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 8,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 9,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 9,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 9,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 9,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 10,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 10,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 10,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 10,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 11,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 11,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 11,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 11,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 12,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 12,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 12,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 12,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 13,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 0
+  },
+  {
+    "group": 13,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 0
+  },
+  {
+    "group": 13,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 0
+  },
+  {
+    "group": 13,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 14,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 0
+  },
+  {
+    "group": 14,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 14,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 14,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 15,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 15,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 15,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 15,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 16,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 16,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 16,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 16,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 17,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 17,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 17,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 17,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 18,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 0
+  },
+  {
+    "group": 18,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 18,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 18,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 19,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 19,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 19,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 19,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 0
+  },
+  {
+    "group": 20,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 20,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 20,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 20,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 21,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 0
+  },
+  {
+    "group": 21,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 0
+  },
+  {
+    "group": 21,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 21,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 22,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 22,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 22,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 22,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 23,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 23,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 23,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 0
+  },
+  {
+    "group": 23,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 0
+  },
+  {
+    "group": 24,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 24,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 24,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 24,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 25,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 25,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 25,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 25,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 26,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 26,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 26,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 26,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "familiar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 27,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 27,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 27,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 0
+  },
+  {
+    "group": 27,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 28,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 28,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 28,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 0
+  },
+  {
+    "group": 28,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 0
+  },
+  {
+    "group": 29,
+    "age": 2,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 29,
+    "age": 2,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 29,
+    "age": 2,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 29,
+    "age": 2,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 4,
+    "success": 0
+  },
+  {
+    "group": 30,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 30,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 30,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 30,
+    "age": 3,
+    "size": "triad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 31,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 31,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 31,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 31,
+    "age": 3,
+    "size": "dyad",
+    "location": "school",
+    "familiarity": "familiar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 32,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 0
+  },
+  {
+    "group": 32,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 0
+  },
+  {
+    "group": 32,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 32,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 0
+  },
+  {
+    "group": 33,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 0
+  },
+  {
+    "group": 33,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 0
+  },
+  {
+    "group": 33,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 33,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 0
+  },
+  {
+    "group": 34,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 34,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 34,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 0
+  },
+  {
+    "group": 34,
+    "age": 3,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 35,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 0
+  },
+  {
+    "group": 35,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 0
+  },
+  {
+    "group": 35,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 0
+  },
+  {
+    "group": 35,
+    "age": 2,
+    "size": "triad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 0
+  },
+  {
+    "group": 36,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 36,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 36,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 36,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 37,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 37,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 37,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 37,
+    "age": 3,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 38,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 38,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 38,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 38,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  },
+  {
+    "group": 39,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 1,
+    "success": 1
+  },
+  {
+    "group": 39,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 2,
+    "success": 1
+  },
+  {
+    "group": 39,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 3,
+    "success": 1
+  },
+  {
+    "group": 39,
+    "age": 2,
+    "size": "dyad",
+    "location": "lab",
+    "familiarity": "unfamiliar",
+    "trial": 4,
+    "success": 1
+  }
+]

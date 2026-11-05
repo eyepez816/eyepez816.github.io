@@ -173,6 +173,15 @@
       item.appendChild(heading);
       addText(item, "p", "meta", study.topic + " · " + study.ageLabel);
       addText(item, "p", "", study.leads.join(", "));
+      if (study.explorer) {
+        var graphs = document.createElement("p");
+        graphs.className = "graphs";
+        var graphsLink = document.createElement("a");
+        graphsLink.href = "../studies/" + study.id + "/" + study.explorer;
+        graphsLink.textContent = "Look at the data";
+        graphs.appendChild(graphsLink);
+        item.appendChild(graphs);
+      }
       ol.appendChild(item);
     });
     results.appendChild(ol);

@@ -41,4 +41,8 @@
     <loc>https://mindandculturelab.github.io/studies/tsa/</loc>
     <priority>0.6</priority>
   </url>
+  <url>
+    <loc>https://mindandculturelab.github.io/studies/tsa/data/</loc>
+    <priority>0.6</priority>
+  </url>
 </urlset>
